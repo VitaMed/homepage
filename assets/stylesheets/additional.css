@@ -7,3 +7,12 @@
   -webkit-text-fill-color: transparent;
   color: #d6249f;
 }
+.avatar{
+  background: url("../images/avatar-removebg.png") no-repeat;
+  transition: all .2s ease-in-out;
+  width: 200px;
+  height: 180px;
+}
+.avatar:hover {
+  transform: scale(1.2);
+}
