@@ -1,0 +1,49 @@
+.contacts li a.twitter:hover {
+  color: #1DA1F2;
+}
+.contacts li a.instagram:hover{
+  background: linear-gradient(45deg, #405de6,#5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #d6249f;
+}
+.ava{
+  background: url("../images/avatar-removebg.png") no-repeat;
+  width: 200px;
+  height: 180px;
+  cursor: pointer;
+}
+.avatar:hover {
+  transform: scale(1.15);
+}
+.banner-title{
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+.details h3 .summary{
+  cursor: pointer;
+}
+@keyframes slidein {
+  from {
+    transform: translateX(200px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+.banner-text:hover{
+  color:  rgba(43, 38, 38, 0.76);
+}
+.right_panel{
+  padding: 0.5em;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+}
+@media (max-width: 1096px) {
+  .ava{
+    width: 140px;
+    height: 150px;
+  }
+}
