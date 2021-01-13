@@ -7,19 +7,22 @@
   -webkit-text-fill-color: transparent;
   color: #d6249f;
 }
-.avatar{
+.ava{
   background: url("../images/avatar-removebg.png") no-repeat;
   width: 200px;
   height: 180px;
   cursor: pointer;
 }
 .avatar:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
-.banner-text{
+.banner-title{
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
   animation-duration: 4s;
   animation-name: slidein;
+}
+.details h3 .summary{
+  cursor: pointer;
 }
 @keyframes slidein {
   from {
@@ -28,5 +31,19 @@
 
   to {
     transform: translateX(0);
+  }
+}
+.banner-text:hover{
+  color:  rgba(43, 38, 38, 0.76);
+}
+.right_panel{
+  padding: 0.5em;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+}
+@media (max-width: 1096px) {
+  .ava{
+    width: 140px;
+    height: 150px;
   }
 }
