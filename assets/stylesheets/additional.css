@@ -9,10 +9,23 @@
 }
 .avatar{
   background: url("../images/avatar-removebg.png") no-repeat;
-  transition: all .2s ease-in-out;
   width: 200px;
   height: 180px;
 }
 .avatar:hover {
   transform: scale(1.2);
+}
+.banner-text{
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    transform: translateX(200px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
